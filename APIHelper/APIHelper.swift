@@ -27,7 +27,7 @@ public class APIHelper {
     }
     
 }
-
+//Adding an extension
 extension APIHelper {
     
     public enum HttpMethod: String {
@@ -55,7 +55,7 @@ extension APIHelper {
             block!(nil,nil,nil)
         }
     }
-    
+    //Creating URL Session
     private func createAndExecuteURlSession(withRequest request: URLRequest) {
         let session = URLSession.shared
         DispatchQueue.global(qos: .default).async {
